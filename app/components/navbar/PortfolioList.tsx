@@ -10,13 +10,21 @@ interface Project {
 const PortfolioList = async () => {
   const projects: Project[] = await getProjects();
 
-  return projects.map((project) => {
-    return (
-      <Link href={`./projects/${project.project_id}`} key={project.project_id}>
-        {project.project_name}
-      </Link>
-    );
-  });
+  return (
+    <div className="flex flex-col">
+      <h3 className="text-3xl underline">Portfolio</h3>
+      {projects.map((project) => {
+        return (
+          <Link
+            href={`./projects/${project.project_id}`}
+            key={project.project_id}
+          >
+            {project.project_name}
+          </Link>
+        );
+      })}
+    </div>
+  );
 };
 
 export default PortfolioList;
