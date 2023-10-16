@@ -1,20 +1,31 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between items-center">
       <Link href={"/"}>
-        <h1>Myles</h1>
+        <Image src={"/ms-logo.svg"} alt="website-logo" height={75} width={70} />
       </Link>
       <nav className="flex justify-between gap-10">
-        <Link href={"mailto:mylesbsmith96@gmail.com"}>Email</Link>
-        <Link href={"https://github.com/msmi1433"} target="_blank">
+        <Link
+          href={"mailto:mylesbsmith96@gmail.com"}
+          className="hover:text-periwinkle transition-colors"
+        >
+          Email
+        </Link>
+        <Link
+          href={"https://github.com/msmi1433"}
+          target="_blank"
+          className="hover:text-periwinkle transition-colors"
+        >
           GitHub
         </Link>
         <Link
           href={"https://www.linkedin.com/in/myles-smith-a96163198/"}
           target="_blank"
+          className="hover:text-periwinkle transition-colors"
         >
           LinkedIn
         </Link>

@@ -15,11 +15,16 @@ const config: Config = {
       },
       colors: {
         "main-gray": "#cccccc",
+        periwinkle: "#D0DDFF",
       },
       dropShadow: {
         glow: [
           "0 0px 45px rgba(255, 255, 255, 0.60)",
           "0 0px 130px rgba(255, 255, 255, 0.34)",
+        ],
+        glowLight: [
+          "0 0px 45px rgba(255, 255, 255, 0.35)",
+          "0 0px 130px rgba(255, 255, 255, 0.20)",
         ],
       },
     },

@@ -23,7 +23,9 @@ const SingleProject = async ({ params }: { params: { id: number } }) => {
   return (
     <div className="flex items-center h-full">
       <section className="grid grid-cols-2 w-full gap-x-16">
-        <h1 className="text-7xl underline pb-5">{project.project_name}</h1>
+        <h1 className="text-7xl text-periwinkle underline pb-5">
+          {project.project_name}
+        </h1>
         <div className="col-start-1 flex flex-col justify-around">
           {project.video ? (
             <iframe
@@ -50,7 +52,7 @@ const SingleProject = async ({ params }: { params: { id: number } }) => {
           </div>
           <div className="flex justify-start gap-20 content-start">
             <div>
-              <h3 className="text-3xl underline">Tech Stack</h3>
+              <h3 className="text-3xl text-periwinkle underline">Tech Stack</h3>
               <ul className="flex flex-col justify-start">
                 {stack.map((tech) => {
                   return <li key={tech}>{tech}</li>;
@@ -58,21 +60,52 @@ const SingleProject = async ({ params }: { params: { id: number } }) => {
               </ul>
             </div>
             <div className="flex justify-start flex-col">
-              <h3 className="text-3xl underline">Links</h3>
+              <h3 className="text-3xl text-periwinkle underline">Links</h3>
               {project.project_link ? (
-                <Link href={project.project_link}>Hosted Project</Link>
+                <span>
+                  <Link
+                    href={project.project_link}
+                    className="hover:text-periwinkle transition-colors"
+                    target="_blank"
+                  >
+                    Hosted Project
+                  </Link>
+                </span>
               ) : null}
               {project.github_link_be && project.github_link_fe ? (
                 <>
-                  <Link href={project.github_link_fe}>
+                  {" "}
+                  <Link
+                    href={project.github_link_fe}
+                    className="hover:text-periwinkle transition-colors"
+                    target="_blank"
+                  >
                     Frontend GitHub Repo
                   </Link>
-                  <Link href={project.github_link_be}>Backend GitHub Repo</Link>
+                  <Link
+                    href={project.github_link_be}
+                    className="hover:text-periwinkle transition-colors"
+                    target="_blank"
+                  >
+                    Backend GitHub Repo
+                  </Link>
                 </>
               ) : project.github_link_be ? (
-                <Link href={project.github_link_be}>GitHub Repo</Link>
+                <Link
+                  href={project.github_link_be}
+                  className="hover:text-periwinkle transition-colors"
+                  target="_blank"
+                >
+                  GitHub Repo
+                </Link>
               ) : (
-                <Link href={project.github_link_fe}>GitHub Repo</Link>
+                <Link
+                  href={project.github_link_fe}
+                  className="hover:text-periwinkle transition-colors"
+                  target="_blank"
+                >
+                  GitHub Repo
+                </Link>
               )}
             </div>
           </div>
