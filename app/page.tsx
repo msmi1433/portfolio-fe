@@ -2,29 +2,35 @@ import PortfolioList from "./components/navbar/PortfolioList";
 
 export default function Home() {
   return (
-    <main className="flex items-center h-full">
-      <section className="grid grid-cols-2 gap-x-16 w-full">
-        <div className="col-start-1 flex flex-col justify-evenly gap-5">
-          <h1 className="text-9xl text-periwinkle">
+    <main className="flex items-center xl:h-full py-10 xl:mt-0 xl:my-0">
+      <section className="w-full flex xl:flex-row flex-col gap-5">
+        <div className="xl:w-3/6 flex flex-col justify-center gap-8">
+          <h1 className="xl:text-9xl text-6xl ml-[-4.5px] xl:ml-[-8.5px] text-periwinkle">
             <span className="transition ease-in hover:drop-shadow-glowLight">
               Hello!
             </span>
           </h1>
-          <p className="text-5xl">
+          <p className="xl:text-5xl text-2xl">
             <span className="transition ease-in hover:drop-shadow-glowLight">
               <span className="text-periwinkle">I'm Myles Smith</span>, a full
-              stack developer based in Manchester, UK
+              stack developer based in Manchester, UK.
             </span>
           </p>
         </div>
-        <div className="col-start-2 flex flex-col justify-evenly">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+        <div className="flex flex-col justify-center gap-3 xl:w-3/6">
+          <p className="text-xl">
+            I recently finished the Northcoders software development bootcamp,
+            where I gained experience working with a range of technologies and
+            frameworks, including{" "}
+            <span className="text-periwinkle">
+              JavaScript, TypeScript, React, PSQL and Express
+            </span>
+            . I'm now looking to put my skills to work by{" "}
+            <span className="text-periwinkle">
+              building exciting products that provide an exceptional experience
+              for users
+            </span>
+            .
           </p>
           <PortfolioList />
         </div>

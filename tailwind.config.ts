@@ -8,14 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
-        "main-gray": "#cccccc",
+        "main-gray": "#8892b0",
         periwinkle: "#D0DDFF",
+        bgPurple: "#0a192f;",
       },
       dropShadow: {
         glow: [
@@ -26,6 +22,10 @@ const config: Config = {
           "0 0px 45px rgba(255, 255, 255, 0.35)",
           "0 0px 130px rgba(255, 255, 255, 0.20)",
         ],
+      },
+      spacing: {
+        130: "40rem",
+        90: "22.5rem",
       },
     },
   },

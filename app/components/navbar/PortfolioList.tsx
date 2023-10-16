@@ -15,10 +15,9 @@ const PortfolioList = async () => {
       <h3 className="text-3xl text-periwinkle underline">Portfolio</h3>
       {projects.map((project) => {
         return (
-          <span>
+          <span key={project.project_id} className="my-0.5">
             <Link
               href={`./projects/${project.project_id}`}
-              key={project.project_id}
               className="text-xl hover:text-periwinkle transition-colors"
             >
               {project.project_name}

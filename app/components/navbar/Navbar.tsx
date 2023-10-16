@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center gap-5">
       <Link href={"/"}>
-        <Image src={"/ms-logo.svg"} alt="website-logo" height={75} width={70} />
+        <Image src={"/ms-logo.svg"} alt="website-logo" height={75} width={75} />
       </Link>
-      <nav className="flex justify-between gap-10">
+      <nav className="flex justify-between gap-4 xl:gap-10">
         <Link
           href={"mailto:mylesbsmith96@gmail.com"}
           className="hover:text-periwinkle transition-colors"
