@@ -32,7 +32,7 @@ const SingleProject = async ({ params }: { params: { id: number } }) => {
               className="xl:w-130 xl:h-90"
               src={project.video}
               title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           ) : (

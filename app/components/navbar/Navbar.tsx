@@ -1,12 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../../public/ms-logo.svg";
 
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center gap-5">
       <Link href={"/"}>
-        <Image src={"/ms-logo.svg"} alt="website-logo" height={75} width={75} />
+        <Image src={logo} alt="website-logo" width={75} />
       </Link>
       <nav className="flex justify-between gap-4 xl:gap-10">
         <Link
