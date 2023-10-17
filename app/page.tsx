@@ -12,8 +12,8 @@ export default function Home() {
           </h1>
           <p className="xl:text-5xl text-2xl">
             <span className="transition ease-in hover:drop-shadow-glowLight">
-              <span className="text-periwinkle">I'm Myles Smith</span>, a full
-              stack developer based in Manchester, UK.
+              <span className="text-periwinkle">I&apos;m Myles Smith</span>, a
+              full stack developer based in Manchester, UK.
             </span>
           </p>
         </div>
@@ -25,7 +25,7 @@ export default function Home() {
             <span className="text-periwinkle">
               JavaScript, TypeScript, React, PSQL and Express
             </span>
-            . I'm now looking to put my skills to work by{" "}
+            . I&apos;m now looking to put my skills to work by{" "}
             <span className="text-periwinkle">
               building exciting products that provide an exceptional experience
               for users

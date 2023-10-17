@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
     default-src 'self' https://msmi-portfolio.cyclic.app;
     script-src 'self' 'nonce-${nonce}' 'unsafe-eval';
     style-src 'self' 'unsafe-inline';
-    img-src 'self' blob: data:;
+    img-src 'self' i.ytimg.com blob: data:;
     frame-src youtube.com www.youtube.com;
     font-src 'self';
     object-src 'none';
