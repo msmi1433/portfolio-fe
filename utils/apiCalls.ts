@@ -6,13 +6,11 @@ export const getProjects = async () => {
 
 export const getSingleProject = async (projectId: number) => {
   const resProj = await fetch(
-    `https://msmi-portfolio.cyclic.app/api/projects/${projectId}`,
-    { next: { revalidate: 1 } }
+    `https://msmi-portfolio.cyclic.app/api/projects/${projectId}`
   );
   const { project } = await resProj.json();
   const resStack = await fetch(
-    `https://msmi-portfolio.cyclic.app/api/projects/${projectId}/stack`,
-    { next: { revalidate: 1 } }
+    `https://msmi-portfolio.cyclic.app/api/projects/${projectId}/stack`
   );
   const { stack } = await resStack.json();
   return { project, stack };

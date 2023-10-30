@@ -2,6 +2,7 @@ import { getSingleProject } from "@/utils/apiCalls";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { error } from "console";
 
 interface Project {
   project: {
