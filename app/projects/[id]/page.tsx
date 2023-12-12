@@ -22,15 +22,15 @@ const SingleProject = async ({ params }: { params: { id: number } }) => {
   const { project, stack }: Project = await getSingleProject(projectId);
 
   return (
-    <div className="flex items-center xl:h-full py-10 xl:mt-0 xl:my-0">
-      <section className="xl:grid grid-cols-2 w-full gap-x-16 flex flex-col gap-5">
-        <h1 className="text-5xl xl:text-7xl text-periwinkle underline pb-5">
+    <div className="flex items-center lg:h-full py-10 lg:mt-0 lg:my-0">
+      <section className="lg:grid grid-cols-2 w-full gap-x-16 flex flex-col gap-5">
+        <h1 className="text-5xl lg:text-7xl text-periwinkle underline pb-5">
           {project.project_name}
         </h1>
         <div className="col-start-1 flex flex-col justify-around">
           {project.video ? (
             <iframe
-              className="xl:w-130 xl:h-90"
+              className="h-full sm:h-80"
               src={project.video}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -52,7 +52,7 @@ const SingleProject = async ({ params }: { params: { id: number } }) => {
           </div>
           <div className="flex justify-start gap-20 content-start">
             <div>
-              <h3 className="xl:text-3xl text-2xl text-periwinkle underline">
+              <h3 className="lg:text-3xl text-2xl text-periwinkle underline">
                 Stack
               </h3>
               <ul className="flex flex-col justify-start">
@@ -66,7 +66,7 @@ const SingleProject = async ({ params }: { params: { id: number } }) => {
               </ul>
             </div>
             <div className="flex justify-start flex-col">
-              <h3 className="xl:text-3xl text-2xl text-periwinkle underline">
+              <h3 className="lg:text-3xl text-2xl text-periwinkle underline">
                 Links
               </h3>
               {project.project_link ? (
