@@ -20,8 +20,8 @@ export default function Home() {
         <div className="flex flex-col justify-center gap-3 xl:w-3/6">
           <p className="text-xl">
             Having recently made the switch into the world of software
-            development, I've gained experience in a range of technologies and
-            frameworks, including{" "}
+            development, I&apos;ve gained experience in a range of technologies
+            and frameworks, including{" "}
             <span className="text-periwinkle">
               JavaScript, TypeScript, React, PSQL and Express
             </span>
