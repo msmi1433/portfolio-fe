@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export function middleware(request: NextRequest) {
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const cspHeader = `
-    default-src 'self' https://msmi-portfolio.cyclic.app;
+    default-src 'self' https://portfolio-db-v6qz.onrender.com;
     script-src 'self' 'nonce-${nonce}' 'unsafe-eval';
     style-src 'self' 'unsafe-inline';
     img-src 'self' i.ytimg.com blob: data:;
